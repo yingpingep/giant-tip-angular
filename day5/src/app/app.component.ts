@@ -12,7 +12,5 @@ export class AppComponent {
   word = '';
   constructor(@Inject(MY_SERVICE_TOKEN) mySvc: IMyService) {
     this.word = mySvc.print();
-    const myd = inject(MyDepService);
-    // console.log(`⚡: AppComponent -> constructor -> myd.hello()`, myd.hello());
   }
 }
