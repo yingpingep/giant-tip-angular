@@ -10,7 +10,7 @@ import { MyDepService } from './my-dep.service';
 export class AppComponent {
   title = 'day5';
   word = '';
-  constructor(@Inject(MY_SERVICE_TOKEN) mySvc: IMyService) {
+  constructor(@Inject(MY_SERVICE_TOKEN) mySvc: IMyService, myDep: MyDepService) {
     this.word = mySvc.print();
   }
 }
