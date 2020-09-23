@@ -1,16 +1,24 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { NgModule, InjectionToken } from '@angular/core';
 
-import { AppComponent } from './app.component';
+import { AppComponent, MULTI_TOKEN } from './app.component';
+import { NewComponent } from './new/new.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    NewComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [
+    {
+      provide: MULTI_TOKEN,
+      multi: true,
+      useValue: 'FIRST'
+    }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
