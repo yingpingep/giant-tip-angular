@@ -1,9 +1,16 @@
 import { Injectable } from '@angular/core';
 
-@Injectable({
-  providedIn: 'root'
-})
-export class CosService {
+export interface ICosService {
+  print(): void;
+}
 
-  constructor() { }
+@Injectable({
+  providedIn: 'root',
+})
+export class CosService implements ICosService {
+  constructor() {}
+
+  print(): void {
+    console.log(`⚡: CosService -> Original service`);
+  }
 }
