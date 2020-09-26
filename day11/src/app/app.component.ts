@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { CosService, ICosService } from './cos.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day11';
+  constructor(public cos: CosService) {}
 }

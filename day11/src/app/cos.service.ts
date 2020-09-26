@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 
 export interface ICosService {
-  print(): void;
+  print(): string;
 }
 
 @Injectable({
@@ -10,7 +10,7 @@ export interface ICosService {
 export class CosService implements ICosService {
   constructor() {}
 
-  print(): void {
-    console.log(`⚡: CosService -> Original service`);
+  print(): string {
+    return '⚡: CosService -> Original service';
   }
 }
