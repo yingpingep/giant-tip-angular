@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, OnInit } from '@angular/core';
 
 @Directive({
-  selector: '[appMydir]'
+  selector: '[appMydir]',
 })
-export class MydirDirective {
+export class MydirDirective implements OnInit {
+  constructor(private ele: ElementRef<HTMLDivElement>) {}
 
-  constructor() { }
-
+  ngOnInit(): void {
+    const pEle = document.createElement('p');
+    pEle.textContent = 'myDir works!';
+    this.ele.nativeElement.appendChild(pEle);
+  }
 }
