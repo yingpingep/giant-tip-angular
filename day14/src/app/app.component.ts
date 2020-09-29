@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day14';
+  tempList = [
+    'a',
+    'b',
+    'c',
+    'd'
+  ];
 }

@@ -123,7 +123,7 @@
     },
     "component-class-suffix": true,
     "contextual-lifecycle": true,
-    "directive-class-suffix": true,
+    "directive-class-suffix": false,
     "no-conflicting-lifecycle": true,
     "no-host-metadata-property": true,
     "no-input-rename": true,
@@ -138,14 +138,10 @@
     "use-pipe-transform-interface": true,
     "directive-selector": [
       true,
-      "attribute",
-      "app",
       "camelCase"
     ],
     "component-selector": [
       true,
-      "element",
-      "app",
       "kebab-case"
     ]
   }
