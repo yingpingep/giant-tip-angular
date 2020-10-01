@@ -6,6 +6,7 @@ import { StyleAComponent } from './style-a/style-a.component';
 import { StyleBComponent } from './style-b/style-b.component';
 import { StyleCComponent } from './style-c/style-c.component';
 import { AnchorDirective } from './anchor.directive';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { AnchorDirective } from './anchor.directive';
     AnchorDirective
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

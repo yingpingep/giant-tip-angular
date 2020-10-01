@@ -10,4 +10,4 @@ export type StyleData = {
   title: string;
   avatar: string;
   content: string;
-}
+};
