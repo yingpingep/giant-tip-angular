@@ -10,7 +10,6 @@ export class StyleCComponent implements Style, OnInit {
 
   name: string;
   title: string;
-  avatar: string;
   content: string;
   constructor() { }
 

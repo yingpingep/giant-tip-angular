@@ -1,3 +1,12 @@
 <app-style-a></app-style-a>
 <app-style-b></app-style-b>
 <app-style-c></app-style-c>
+<button
+  mat-raised-button
+  color="accent"
+  *ngFor="let cmpObj of cmpList"
+  (click)="changeComponent(cmpObj.cmp)"
+>
+  Style {{ cmpObj.name }}
+</button>
+<ng-template anchor></ng-template>
