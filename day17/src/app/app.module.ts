@@ -5,13 +5,15 @@ import { AppComponent } from './app.component';
 import { StyleAComponent } from './style-a/style-a.component';
 import { StyleBComponent } from './style-b/style-b.component';
 import { StyleCComponent } from './style-c/style-c.component';
+import { AnchorDirective } from './anchor.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     StyleAComponent,
     StyleBComponent,
-    StyleCComponent
+    StyleCComponent,
+    AnchorDirective
   ],
   imports: [
     BrowserModule
