@@ -1,0 +1,2 @@
+export interface Style {
+}
