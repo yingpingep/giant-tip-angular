@@ -32,7 +32,7 @@ export class AppComponent {
     console.log(`⚡: AppComponent -> changeComponent -> cmp`, cmp);
     this.anchor.loadComponent(cmp, {
       userTitle: 'Human',
-      postContent: 'Cat!!!!!',
+      postContent: cmp.name,
       userName: 'Cat\'s follower'
     });
   }
