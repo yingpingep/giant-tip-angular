@@ -8,6 +8,7 @@ import { StyleCComponent } from './style-c/style-c.component';
 import { AnchorDirective } from './anchor.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { StyleComponent } from './style';
 
 @NgModule({
@@ -17,14 +18,15 @@ import { StyleComponent } from './style';
     StyleBComponent,
     StyleCComponent,
     StyleComponent,
-    AnchorDirective
+    AnchorDirective,
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatButtonModule
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

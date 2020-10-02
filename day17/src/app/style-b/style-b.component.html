@@ -1,1 +1,30 @@
-<p>style-b works!</p>
+<div class="card">
+  <!-- Header -->
+  <div class="header">
+    <div class="avatar"></div>
+    <div class="block" style="margin-left: 5px">
+      <div style="margin-bottom: 12px; font-size: 20px; font-weight: 500">
+        {{ userName }}
+      </div>
+      <div
+        style="margin-top: -8px; font-size: 14px; color: rgba(0, 0, 0, 0.54)"
+      >
+        {{ userTitle }}
+      </div>
+    </div>
+    <div style="position: relative; left: 70%;">
+      <button mat-icon-button color="accent">
+        <mat-icon>menu</mat-icon>
+      </button>
+    </div>
+  </div>
+  <!-- Header end -->
+  <!-- Content -->
+  <div>
+    <div style="margin-top: 12px;">
+      <p>{{ postContent }}</p>
+    </div>
+    <img src="/assets/sereja-ris-g3B53PbBfwU-unsplash.jpg" />
+  </div>
+  <!-- Content end -->
+</div>
