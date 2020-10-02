@@ -1,6 +1,6 @@
 import { Component, Type, ViewChild } from '@angular/core';
 import { AnchorDirective } from './anchor.directive';
-import { Style } from './style';
+import { StyleComponent } from './style';
 import { StyleAComponent } from './style-a/style-a.component';
 import { StyleBComponent } from './style-b/style-b.component';
 import { StyleCComponent } from './style-c/style-c.component';
@@ -13,7 +13,7 @@ import { StyleCComponent } from './style-c/style-c.component';
 export class AppComponent {
   @ViewChild(AnchorDirective) anchor: AnchorDirective;
   title = 'day17';
-  cmpList: { name: string; cmp: Type<Style> }[] = [
+  cmpList: { name: string; cmp: Type<StyleComponent> }[] = [
     {
       name: 'A',
       cmp: StyleAComponent,
@@ -28,7 +28,7 @@ export class AppComponent {
     },
   ];
 
-  changeComponent(cmp: Type<Style>): void {
+  changeComponent(cmp: Type<StyleComponent>): void {
     console.log(`⚡: AppComponent -> changeComponent -> cmp`, cmp);
     this.anchor.loadComponent(cmp, {
       userTitle: 'Human',

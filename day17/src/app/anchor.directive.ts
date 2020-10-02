@@ -7,7 +7,7 @@ import {
   ViewContainerRef,
 } from '@angular/core';
 import { inject } from '@angular/core/testing';
-import { Style, StyleData } from './style';
+import { StyleComponent, StyleData } from './style';
 
 @Directive({
   selector: '[anchor]',
@@ -19,11 +19,11 @@ export class AnchorDirective {
     private injector: Injector
   ) {}
 
-  loadComponent(componentClass: Type<Style>, data: StyleData): void {
+  loadComponent(componentClass: Type<StyleComponent>, data: StyleData): void {
     this.viewContainerRef.clear();
 
-    const cmpFactory = this.cmpFactoryResolver.resolveComponentFactory<Style>(componentClass);
-    const cmp = this.viewContainerRef.createComponent<Style>(cmpFactory, 0, this.injector);
+    const cmpFactory = this.cmpFactoryResolver.resolveComponentFactory<StyleComponent>(componentClass);
+    const cmp = this.viewContainerRef.createComponent<StyleComponent>(cmpFactory, 0, this.injector);
     Object.entries(data).forEach(([key, value]) => {
       cmp.instance[key] = value;
     });

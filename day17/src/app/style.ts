@@ -17,10 +17,3 @@ export type StyleData = {
   userTitle: string;
   postContent: string;
 };
-
-export interface Style {
-  userName: string;
-  userTitle: string;
-  postContent: string;
-
-}
