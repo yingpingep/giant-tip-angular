@@ -21,8 +21,9 @@ export class AnchorDirective {
 
   loadComponent(componentClass: Type<StyleComponent>, data: StyleData): void {
     this.viewContainerRef.clear();
-
+    console.log(`⚡: AnchorDirective -> loadComponent -> componentClass`, componentClass);
     const cmpFactory = this.cmpFactoryResolver.resolveComponentFactory<StyleComponent>(componentClass);
+    console.log(`⚡: AnchorDirective -> loadComponent -> cmpFactory`, cmpFactory);
     const cmp = this.viewContainerRef.createComponent<StyleComponent>(cmpFactory, 0, this.injector);
     Object.entries(data).forEach(([key, value]) => {
       cmp.instance[key] = value;

@@ -29,7 +29,6 @@ export class AppComponent {
   ];
 
   changeComponent(cmp: Type<StyleComponent>): void {
-    console.log(`⚡: AppComponent -> changeComponent -> cmp`, cmp);
     this.anchor.loadComponent(cmp, {
       userTitle: 'Human',
       postContent: cmp.name,
