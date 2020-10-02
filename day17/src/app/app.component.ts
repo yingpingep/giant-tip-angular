@@ -31,9 +31,9 @@ export class AppComponent {
   changeComponent(cmp: Type<Style>): void {
     console.log(`⚡: AppComponent -> changeComponent -> cmp`, cmp);
     this.anchor.loadComponent(cmp, {
-      title: 'Human',
-      content: 'Cat!!!!!',
-      name: 'Cat\'s follower'
+      userTitle: 'Human',
+      postContent: 'Cat!!!!!',
+      userName: 'Cat\'s follower'
     });
   }
 }

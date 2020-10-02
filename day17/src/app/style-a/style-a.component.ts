@@ -1,18 +1,13 @@
-import { Component, OnInit } from '@angular/core';
-import { Style } from '../style';
+import { Component, Input, OnInit } from '@angular/core';
+import { StyleComponent } from '../style';
 
 @Component({
   selector: 'app-style-a',
   templateUrl: './style-a.component.html',
   styleUrls: ['./style-a.component.scss']
 })
-export class StyleAComponent implements Style, OnInit {
-
-  name: string;
-  title: string;
-  content: string;
-  constructor() { }
-  ngOnInit(): void {
+export class StyleAComponent extends StyleComponent {
+  constructor() {
+    super();
   }
-
 }

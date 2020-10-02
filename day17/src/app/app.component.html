@@ -1,6 +1,12 @@
-<app-style-a></app-style-a>
-<app-style-b></app-style-b>
-<app-style-c></app-style-c>
+<div style="margin: 5px;">
+  <app-style-a
+    [userTitle]="'Title'"
+    [userName]="'csa'"
+    [postContent]="'sdf'"
+  ></app-style-a>
+  <!-- <app-style-b></app-style-b>
+  <app-style-c></app-style-c> -->
+</div>
 <button
   mat-raised-button
   color="accent"
@@ -9,4 +15,4 @@
 >
   Style {{ cmpObj.name }}
 </button>
-<ng-template anchor></ng-template>
+<!-- <ng-template anchor></ng-template> -->

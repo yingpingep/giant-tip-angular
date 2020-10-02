@@ -8,6 +8,7 @@ import { StyleCComponent } from './style-c/style-c.component';
 import { AnchorDirective } from './anchor.directive';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatButtonModule } from '@angular/material/button';
+import { StyleComponent } from './style';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { MatButtonModule } from '@angular/material/button';
     StyleAComponent,
     StyleBComponent,
     StyleCComponent,
+    StyleComponent,
     AnchorDirective
   ],
   imports: [

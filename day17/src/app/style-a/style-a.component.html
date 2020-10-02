@@ -1,11 +1,27 @@
-<!-- Header -->
-<div class="header">
-  <div class="avatar">
+<div class="card">
+  <!-- Header -->
+  <div class="header">
+    <div class="avatar"></div>
+    <div class="block" style="margin-left: 5px">
+      <div style="margin-bottom: 12px; font-size: 20px; font-weight: 500">
+        {{ userName }}
+      </div>
+      <div
+        style="margin-top: -8px; font-size: 14px; color: rgba(0, 0, 0, 0.54)"
+      >
+        {{ userTitle }}
+      </div>
+    </div>
   </div>
+  <!-- Header end -->
+  <!-- Content -->
+  <div>
+    <img src="/assets/sereja-ris-g3B53PbBfwU-unsplash.jpg" />
+  </div>
+  <div class="content">
+    <p>{{ postContent }}</p>
+    <button mat-flat-button>Like</button>
+    <button mat-flat-button>Share</button>
+  </div>
+  <!-- Content end -->
 </div>
-<!-- Header end -->
-<!-- Content -->
-<div>
-
-</div>
-<!-- Content end -->

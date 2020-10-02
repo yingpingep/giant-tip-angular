@@ -1,11 +1,26 @@
-export interface Style {
-  name: string;
-  title: string;
-  content: string;
-}
+import { Component, Input } from '@angular/core';
 
+@Component(
+  {
+    selector: 'base-style',
+    template: ''
+  }
+)
+export class StyleComponent {
+  @Input() userName: string;
+  @Input() userTitle: string;
+  @Input() postContent: string;
+
+}
 export type StyleData = {
-  name: string;
-  title: string;
-  content: string;
+  userName: string;
+  userTitle: string;
+  postContent: string;
 };
+
+export interface Style {
+  userName: string;
+  userTitle: string;
+  postContent: string;
+
+}
