@@ -1,6 +1,15 @@
 <ng-container *ngTemplateOutlet="eng; context: myContext"></ng-container>
-<br>
+<br />
 <ng-container *ngTemplateOutlet="tw; context: myContext"></ng-container>
+<br />
+<ng-container *ngTemplateOutlet="tTemp.templateRef; context: myContext"></ng-container>
 
-<ng-template #eng let-name><span>Hello {{name}}!</span></ng-template>
-<ng-template #tw let-person="localTw"><span>您好 {{person}}!</span></ng-template>
+<ng-template #eng let-name
+  ><span>Hello {{ name }}!</span></ng-template
+>
+<ng-template #tw let-person="localTw"
+  ><span>您好 {{ person }}!</span></ng-template
+>
+<ng-template appTemp let-name #tTemp="tempDirective">
+  <span>Hello {{ name }}!</span>
+</ng-template>
