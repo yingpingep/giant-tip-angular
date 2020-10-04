@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day19';
+  myContext = {$implicit: 'World', localTw: '世界'};
 }
