@@ -8,7 +8,7 @@ import { CosService } from '../cos.service';
 })
 export class B2Component implements OnInit {
   content = 'undefined';
-  constructor(@Self() @Optional() public cos: CosService) { }
+  constructor(@Host() @Optional() public cos: CosService) { }
 
   ngOnInit(): void {
     if (this.cos) {
