@@ -1,6 +1,7 @@
 <p>It Works!</p>
+<p>111 This is subscribed by AsyncPipe: {{ interval1 | async }}</p>
 <ng-container *ngIf="show">
-  <p>This is subscribed by AsyncPipe: {{ interval1 | async }}</p>
   <p>This is subscribed manually: {{ interval2Value }}</p>
+  <p>This is subscribed by AsyncPipe: {{ interval1 | async }}</p>
 </ng-container>
 <button mat-raised-button (click)="changeShow()">Change</button>
