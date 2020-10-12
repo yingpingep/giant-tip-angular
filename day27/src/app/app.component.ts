@@ -12,7 +12,16 @@ export class AppComponent {
   @ViewChild('b') bInput: ElementRef<HTMLInputElement>;
   @ViewChild('c') cInput: ElementRef<HTMLInputElement>;
   title = 'day27';
-  objs = [];
+  objs = [{
+    name: 'a',
+    title: 'b',
+    show: true
+  },
+  {
+    name: 'b',
+    title: 'c',
+    show: true
+  }];
   append(name: string, title: string, show: string): void {
     const newObj = {
       name,

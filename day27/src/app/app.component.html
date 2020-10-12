@@ -2,9 +2,14 @@
 <label>title:</label><input #b>
 <label>show:</label><input #c>
 <button (click)="append(a.value, b.value, c.value)">Append</button>
-<ng-container>
-  <p *ngFor="let item of (objs | impureFilter)">{{ item | json }}</p>
-</ng-container>
-<!-- <ng-container>
-  <p *ngFor="let item of (objs | filter)">{{ item | json }}</p>
-</ng-container> -->
+<div>
+  <p>Impure:</p>
+  <ng-container>
+    <p *ngFor="let item of (objs | impureFilter)">{{ item | json }}</p>
+  </ng-container>
+  <p>Pure:</p>
+  <ng-container>
+    <p *ngFor="let item of (objs | filter)">{{ item | json }}</p>
+  </ng-container>
+</div>
+
