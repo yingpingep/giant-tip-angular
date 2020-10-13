@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'day28';
+  user = 'Initial Value';
+  slider = 10;
 }
